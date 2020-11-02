@@ -1,14 +1,7 @@
-// var year = document.getElementById("year");
-// var month = document.getElementById("month");
-// var day = document.getElementById("day");
-// var hours = document.getElementById("hours");
-// var min = document.getElementById("minutes");
-// var sec = document.getElementById("seconds");
 var wholeDate = document.getElementById("wholeDate");
 
 function time(){
     var date = new Date();
-    // year.textContent = date.getFullYear();
     wholeDate.textContent = " ";
     var i = date.getMonth();
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -25,7 +18,7 @@ function time(){
     else
         wholeDate.textContent += " " + d + " " + ":";
 
-    // month.textContent = months[i];
+
     wholeDate.textContent += " " + months[i];
     wholeDate.textContent +=  " " + date.getFullYear();
 
@@ -52,18 +45,7 @@ function time(){
         wholeDate.textContent += "0" + s;
     else
         wholeDate.textContent += s;
-
-
-    // var logo = document.querySelector("img");
-
-    // if(h < 12)
-    //     logo.src = "cat.jpg";
-    // else
-    //     logo.src = "evening.jpg";
     
-    
-    
-
     setTimeout(time, 1000);
    
 }
